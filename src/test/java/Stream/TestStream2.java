@@ -173,6 +173,8 @@ public class TestStream2 {
 //        D
         //只取集合中的Name 注意：Employer::getName采用的是类::实例方法·引用
         employers.stream().map(Employer::getName).forEach(System.out::println);
+        //map的参数类型是Function的函数式接口，并且接口中方法是一个参数，并且只有一个返回值，
+        //所以无参数的，类::实例方法 的引用是没毛病的
     }
 
     //flatMap -- 接受一个函数作为参数，将流中的每个值都换成另一个流，然后把所有流连接成一个流

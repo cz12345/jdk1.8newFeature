@@ -12,13 +12,13 @@ import java.util.List;
  */
 public class TraningLambda {
     List<Employer> employers = Arrays.asList(
-            new Employer("zhangsan", 18, 335),
-            new Employer("lisi", 19, 338),
-            new Employer("wangwu", 25, 3380),
-            new Employer("zhaoliu", 26, 6380),
-            new Employer("sunqi", 26, 6780),
-            new Employer("erba", 27, 7780),
-            new Employer("ll", 24, 4780)
+            new Employer("zhangsan", 18, 335,null),
+            new Employer("lisi", 19, 338,null),
+            new Employer("wangwu", 25, 3380,null),
+            new Employer("zhaoliu", 26, 6380,null),
+            new Employer("sunqi", 26, 6780,null),
+            new Employer("erba", 27, 7780,null),
+            new Employer("ll", 24, 4780,null)
     );
 
 
