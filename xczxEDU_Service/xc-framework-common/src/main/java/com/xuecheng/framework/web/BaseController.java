@@ -16,6 +16,8 @@ public class BaseController {
 
     protected HttpSession session;
 
+
+    /*注意这种会产生线程问题*/
     @ModelAttribute
     public void setReqAndRes(HttpServletRequest request, HttpServletResponse response) {
 

@@ -1,0 +1,3 @@
+﻿1:了解一点monodb，摸清楚使用场景，以及常见技术性面试题与redis作比较
+2:整个页面静态化流程
+3：activeMQ 和RebbitMq对比
