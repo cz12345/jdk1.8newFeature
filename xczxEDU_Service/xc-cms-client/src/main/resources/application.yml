@@ -1,0 +1,28 @@
+server:
+  port: 31000
+spring:
+  application:
+    name: xc-cms-client
+  data:
+    mongodb:
+      uri:  mongodb://root:123@120.79.229.60:27017
+      database: xc_cms
+  rabbitmq:
+    host: 120.79.229.60
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: my_vhost
+#配置自己的配置
+xuecheng:
+  mq:
+    #配置消费者监控的队列,(视频说不同的客户端的队列不能重复，并且属于同一门户的的routingKey是一样的，至今不能理解为什么这么做，本人理解
+    #不需要用路由模式，直接订阅模式即可，当然也可以用，以站点ID作用路由key，那么不同的路由key，需要部署不同的消费者客户端)
+    routingKey: 5a751fab6abb5044e0d19ea1 #此routingKey为门户站点ID
+    queue: ueue_cms_postpage_01
+
+
+
+
+
+
